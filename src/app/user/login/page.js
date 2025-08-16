@@ -35,7 +35,7 @@ export default function UserLoginPage() {
       if (userData.role === 'admin') {
         router.push('/admin/dashboard');
       } else {
-        router.push('/user/pages/home');
+        router.push('/user/home');
       }
     } catch (err) {
       toast.error(err?.data?.message || err.message || 'Login failed');

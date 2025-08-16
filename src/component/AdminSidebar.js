@@ -13,7 +13,6 @@ const navItems = [
   { name: "Team", path: "/admin/team" },
   { name: "Placement", path: "/admin/placement" },
   { name: "Contact", path: "/admin/contact" },
-  { name: "Users", path: "/admin/settings" },
 ];
 
 export default function AdminSidebar({ isOpen, onClose }) {

@@ -42,15 +42,7 @@ export default function AdminNavbar({ onMenuClick }) {
         </h1>
       </div>
 
-      <div className="flex space-x-3">
-        <motion.button
-          whileHover={{ scale: 1.1 }}
-          whileTap={{ scale: 0.95 }}
-          className="bg-white text-blue-600 px-4 py-2 rounded-xl font-semibold shadow-md hover:bg-gray-100 transition-all"
-          onClick={() => router.push("/admin/profile")}
-        >
-          Profile
-        </motion.button>
+      <div>
         <motion.button
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.95 }}
