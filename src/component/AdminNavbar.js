@@ -6,7 +6,8 @@ import { toast } from "react-hot-toast";
 import { motion } from "framer-motion";
 import { Menu } from "lucide-react";
 import { useLogoutAdminMutation } from "../../redux/features/adminAuth/adminAuthApi";
-import { clearUser } from "../../redux/features/userAuth/userAuthSlice";
+import { clearAdmin } from "../../redux/features/adminAuth/adminAuthSlice";
+
 
 export default function AdminNavbar({ onMenuClick }) {
   const router = useRouter();
@@ -16,7 +17,7 @@ export default function AdminNavbar({ onMenuClick }) {
   const handleLogout = async () => {
     try {
       await logoutAdmin().unwrap();
-      dispatch(clearUser());
+      dispatch(clearAdmin());
       toast.success("Logged out successfully!");
       router.push("/admin/login");
     } catch (err) {
